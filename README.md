@@ -1,12 +1,7 @@
-# Welcome to your CDK JavaScript project
+# AWS Management Stack
 
-This is a blank project for CDK development with JavaScript.
+CDK stack to manage my AWS Account
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app. The build step is not required when using JavaScript.
+## Features
 
-## Useful commands
-
-* `npm run test`         perform the jest unit tests
-* `cdk deploy`           deploy this stack to your default AWS account/region
-* `cdk diff`             compare deployed stack with current state
-* `cdk synth`            emits the synthesized CloudFormation template
+- check-access-tokens: A lambda function that checks if any iam access keys in my account are older than 60 days and if such notify me over discord to rotate said keys.
